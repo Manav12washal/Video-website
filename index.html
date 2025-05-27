@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+
+    <!-- ✅ Google Analytics Tracking Script (Single Version) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TC5CF91G23"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-TC5CF91G23');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to My Blog</h1>
+    </header>
+
+    <!-- Button -->
+    <section>
+        <button id="alertButton">Click Me</button>
+    </section>
+
+    <!-- Form -->
+    <section>
+        <h2>Subscribe to Our Newsletter</h2>
+        <form id="subscriptionForm">
+            <input type="text" id="name" placeholder="Enter your name" required><br><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- Local Video -->
+    <section>
+        <h2>Watch Our Latest Video</h2>
+        <video id="myVideo" width="560" height="315" controls>
+            <source src="sample video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <!-- File Attachment -->
+    <section>
+        <h2>Upload a File</h2>
+        <input type="file" id="fileInput">
+        <p id="fileInfo"></p>
+    </section>
+
+</body>
+</html>
